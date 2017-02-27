@@ -14,7 +14,7 @@ void setup() {
   pinMode(ROSSO, OUTPUT);  
   Serial.begin(9600);
   // si impostano ad HIGH i pin VERDE, BLU, ROSSO  
-  // inizialmente il led RGB sar√† spento  
+  // inizialmente il led RGB sar‡ spento  
   digitalWrite(VERDE, HIGH);  
   digitalWrite(BLU, HIGH);  
   digitalWrite(ROSSO, HIGH);  
@@ -27,17 +27,13 @@ int ValRosso;
 int ValBlu;  
 int ValVerde;  
   
-  
 void loop() {  
   
   // variazione da verde a rosso  
-  
   int ValRosso = 255;  
   int ValBlu = 0;  
   int ValVerde = 0;  
-  
   for( int i = 0 ; i < 255 ; i += 1 ){  
-  
     ValVerde += 1;  
     ValRosso -= 1;  
     
